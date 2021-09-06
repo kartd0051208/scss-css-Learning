@@ -1,0 +1,44 @@
+$background-color: #ff0000;
+$btn-color: #0000ff;
+$banner-color: #fff;
+$body-color: #000;
+$basic-font-size:16px;
+$medium-font-size: $basic-font-size*1.5;
+
+body {
+    font-size: $basic-font-size;
+    color: $body-color;
+}
+.header {
+    background-image: url(../header_desktop.png);
+    .header .menu {
+        top: 0;
+        .header .menu .btn {
+            color: $btn-color;
+        }
+    }
+    .header .banner-title {
+        max-width: 460px;
+        background: $background-color;
+        color: $banner-color;
+        font-size:$medium-font-size;
+    }
+    .header .main-menu {
+        background: $background-color;
+        overflow: hidden;
+        .header .main-menu a:hover {
+            background: $background-color;
+        }
+    }
+}
+.content h2 {
+    font-size:$medium-font-size;
+}
+.footer h3 {
+    font-size:$medium-font-size;
+}
+.footer p {
+    color: $btn-color;
+}
+
+@import "style.scss";
